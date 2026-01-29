@@ -15,7 +15,6 @@ searchBtn.addEventListener("click", () => {
 
 async function getWeather(city) {
   const apiKey = "89c85082cc52d65cf6c745f641d20a01";
-  const apiKey = "89c85082cc52d65cf6c745f641d20a01"; 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
 
   try {

@@ -1,17 +1,21 @@
+/* Reset default margin */
 * {
     margin: 0;
 }
 
+/* Body */
 body {
     background-color: rgb(35, 46, 48);
 }
 
+/* Headings */
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 64px;
     color: rgb(35, 46, 48);
 }
 
+/* Links */
 a {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
@@ -19,30 +23,30 @@ a {
     text-decoration: none;
 }
 
+/* Paragraphs */
 p {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     color: rgb(140, 167, 181);
 }
 
+/* Container */
 .container {
     background: linear-gradient(90deg, #42b4ff 0%, #12b393 100%);
     color: rgb(116, 139, 151);
-}
-
-.container {
-    background: linear-gradient(90deg,#42b4ff 0%, #12b393 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 120px 350px 120px 350px;
+    padding: 120px 350px;
 }
 
+/* Header */
 .header {
     align-self: center;
     padding-bottom: 30px;
 }
 
+/* Inputs */
 .inputs {
     display: flex;
     flex-direction: column;
@@ -56,7 +60,7 @@ p {
     background-color: white;
     border-style: none;
     border-radius: 30px;
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
 }
 
 #cityInput:focus {
@@ -67,19 +71,20 @@ p {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     color: white;
-    background-color: rgb(35, 46, 48, 0.5);
+    background-color: rgba(35, 46, 48, 0.5);
     border-style: none;
     border-radius: 30px;
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
     transition: background-color 0.3s ease-in-out;
 }
 
 #searchBtn:hover {
     cursor: pointer;
     color: white;
-    background-color: rgb(35, 46, 48, 0.7);
+    background-color: rgba(35, 46, 48, 0.7);
 }
 
+/* Weather Results */
 #weatherResults {
     margin-top: 20px;
     padding: 20px;
@@ -100,56 +105,47 @@ p {
     margin: 5px 0;
 }
 
+/* Navigation */
 #navigation {
     display: flex;
     justify-content: center;
     background-color: rgb(52, 67, 70);
 }
 
-<<<<<<< HEAD
-#navigation>a {
-=======
 #navigation > a {
->>>>>>> 131eb7d1fd904891bb6406628c356f613e71e4fc
-    padding: 20px 60px 20px 60px;
+    padding: 20px 60px;
     transition: background-color 0.3s ease-in-out;
 }
 
-<<<<<<< HEAD
-#navigation>a:hover {
-    background-color: rgb(69, 87, 91);
-}
-
-.about>p {
-=======
 #navigation > a:hover {
     background-color: rgb(69, 87, 91);
 }
 
+/* About Section */
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-style: none;
+    border-radius: 20px;
+    padding: 40px;
+}
+
 .about > p {
->>>>>>> 131eb7d1fd904891bb6406628c356f613e71e4fc
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     line-height: 1.8;
     color: black;
 }
 
-.about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: rgb(255, 255, 255, 0.6);
-    border-style: none;
-    border-radius: 20px;
-    padding: 40px 40px 40px 40px;
-}
-
+/* Footer */
 .footer {
     display: flex;
     justify-content: center;
     background-color: rgb(35, 46, 48);
     margin: 0;
-    padding: 50px 150px 50px 150px;
+    padding: 50px 150px;
 }
 
 /* Mobile responsiveness */
@@ -160,19 +156,14 @@ p {
     }
 
     .container {
-        padding: 100px 20px 100px 20px;
+        padding: 100px 20px;
     }
 
     .inputs {
         gap: 15px;
     }
 
-<<<<<<< HEAD
-    #cityInput,
-    #searchBtn {
-=======
     #cityInput, #searchBtn {
->>>>>>> 131eb7d1fd904891bb6406628c356f613e71e4fc
         font-size: 18px;
         padding: 15px;
     }
@@ -185,11 +176,7 @@ p {
         font-size: 16px;
     }
 
-<<<<<<< HEAD
-    #navigation>a {
-=======
     #navigation > a {
->>>>>>> 131eb7d1fd904891bb6406628c356f613e71e4fc
         padding: 15px 20px;
         font-size: 16px;
     }
@@ -203,11 +190,7 @@ p {
         padding: 20px;
     }
 
-<<<<<<< HEAD
-    .about>p {
-=======
     .about > p {
->>>>>>> 131eb7d1fd904891bb6406628c356f613e71e4fc
         font-size: 16px;
     }
 }
@@ -219,15 +202,10 @@ p {
     }
 
     .container {
-        padding: 60px 10px 60px 10px;
+        padding: 60px 10px;
     }
 
-<<<<<<< HEAD
-    #cityInput,
-    #searchBtn {
-=======
     #cityInput, #searchBtn {
->>>>>>> 131eb7d1fd904891bb6406628c356f613e71e4fc
         font-size: 16px;
         padding: 12px;
     }
@@ -240,23 +218,12 @@ p {
         font-size: 14px;
     }
 
-<<<<<<< HEAD
-    #navigation>a {
-=======
     #navigation > a {
->>>>>>> 131eb7d1fd904891bb6406628c356f613e71e4fc
         padding: 12px;
         font-size: 14px;
     }
 
-<<<<<<< HEAD
-    .about>p {
-        font-size: 14px;
-    }
-}
-=======
     .about > p {
         font-size: 14px;
     }
 }
->>>>>>> 131eb7d1fd904891bb6406628c356f613e71e4fc
