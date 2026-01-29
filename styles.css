@@ -22,11 +22,19 @@ a {
 p {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
+<<<<<<< HEAD
     color: rgb(140, 167, 181);
 }
 
 .container {
     background: linear-gradient(90deg, #42b4ff 0%, #12b393 100%);
+=======
+    color: rgb(116, 139, 151);
+}
+
+.container {
+    background: linear-gradient(90deg,#42b4ff 0%, #12b393 100%);
+>>>>>>> 131eb7d1fd904891bb6406628c356f613e71e4fc
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,16 +109,28 @@ p {
     background-color: rgb(52, 67, 70);
 }
 
+<<<<<<< HEAD
 #navigation>a {
+=======
+#navigation > a {
+>>>>>>> 131eb7d1fd904891bb6406628c356f613e71e4fc
     padding: 20px 60px 20px 60px;
     transition: background-color 0.3s ease-in-out;
 }
 
+<<<<<<< HEAD
 #navigation>a:hover {
     background-color: rgb(69, 87, 91);
 }
 
 .about>p {
+=======
+#navigation > a:hover {
+    background-color: rgb(69, 87, 91);
+}
+
+.about > p {
+>>>>>>> 131eb7d1fd904891bb6406628c356f613e71e4fc
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     line-height: 1.8;
@@ -150,8 +170,12 @@ p {
         gap: 15px;
     }
 
+<<<<<<< HEAD
     #cityInput,
     #searchBtn {
+=======
+    #cityInput, #searchBtn {
+>>>>>>> 131eb7d1fd904891bb6406628c356f613e71e4fc
         font-size: 18px;
         padding: 15px;
     }
@@ -164,7 +188,11 @@ p {
         font-size: 16px;
     }
 
+<<<<<<< HEAD
     #navigation>a {
+=======
+    #navigation > a {
+>>>>>>> 131eb7d1fd904891bb6406628c356f613e71e4fc
         padding: 15px 20px;
         font-size: 16px;
     }
@@ -178,7 +206,11 @@ p {
         padding: 20px;
     }
 
+<<<<<<< HEAD
     .about>p {
+=======
+    .about > p {
+>>>>>>> 131eb7d1fd904891bb6406628c356f613e71e4fc
         font-size: 16px;
     }
 }
@@ -193,8 +225,12 @@ p {
         padding: 60px 10px 60px 10px;
     }
 
+<<<<<<< HEAD
     #cityInput,
     #searchBtn {
+=======
+    #cityInput, #searchBtn {
+>>>>>>> 131eb7d1fd904891bb6406628c356f613e71e4fc
         font-size: 16px;
         padding: 12px;
     }
@@ -207,12 +243,23 @@ p {
         font-size: 14px;
     }
 
+<<<<<<< HEAD
     #navigation>a {
+=======
+    #navigation > a {
+>>>>>>> 131eb7d1fd904891bb6406628c356f613e71e4fc
         padding: 12px;
         font-size: 14px;
     }
 
+<<<<<<< HEAD
     .about>p {
         font-size: 14px;
     }
 }
+=======
+    .about > p {
+        font-size: 14px;
+    }
+}
+>>>>>>> 131eb7d1fd904891bb6406628c356f613e71e4fc
