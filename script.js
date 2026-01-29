@@ -14,11 +14,8 @@ searchBtn.addEventListener("click", () => {
 });
 
 async function getWeather(city) {
-<<<<<<< HEAD
   const apiKey = "89c85082cc52d65cf6c745f641d20a01";
-=======
   const apiKey = "89c85082cc52d65cf6c745f641d20a01"; 
->>>>>>> 131eb7d1fd904891bb6406628c356f613e71e4fc
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
 
   try {
