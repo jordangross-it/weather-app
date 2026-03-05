@@ -5,19 +5,20 @@
 
 /* Body */
 body {
-    background: url('img1.png');
+    background: url('backgroundImage.jpg') no-repeat center center fixed;
 }
 
 /* Headings */
 h1 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 64px;
+    font-weight: 900;
     color: rgb(35, 46, 48);
 }
 
 /* Links */
 a {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
     color: white;
     text-decoration: none;
@@ -25,21 +26,24 @@ a {
 
 /* Paragraphs */
 p {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
     color: rgb(140, 167, 181);
 }
 
 /* Container */
 .container {
-    background: linear-gradient(150deg, #aee1fc 0%, #95d7b0 100%);
+    background: linear-gradient(150deg, rgb(174, 225, 252, 0.7) 0%, rgb(149, 215, 176, 0.7) 100%);
+    backdrop-filter: blur(15px);
     color: rgb(116, 139, 151);
     display: flex;
     flex-direction: column;
     justify-content: center;
     max-height: 100vh;
-    border-radius: 30px;
-    padding: 160px 350px;
+    border: 2px solid rgb(245, 245, 245, 0.5);
+    border-radius: 50px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 140px 300px;
     margin: 40px 40px;
 }
 
@@ -58,35 +62,39 @@ p {
 }
 
 #cityInput {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 20px;
     background-color: white;
+    box-shadow: 2px 2px 2px rgba(101, 101, 101, 0.5);
     border-style: none;
-    border-radius: 30px;
+    border-radius: 50px;
     padding: 20px;
-    transition: all 0.3s ease-in-out;
 }
 
 #cityInput:focus {
     outline: none;
-    box-shadow: 0 0 0 2px rgba(35, 46, 48, 0.5);
+    border: 1px solid rgb(101, 101, 101);
+    box-shadow: 2px 2px 2px rgba(101, 101, 101, 0.5);
 }
 
 #searchBtn {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 20px;
-    color: white;
-    background-color: rgba(35, 46, 48, 0.5);
+    color: black;
+    background-color: rgb(167, 249, 255);
     border-style: none;
-    border-radius: 30px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 2px rgba(101, 101, 101, 0.5);
     padding: 20px;
-    transition: background-color 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 #searchBtn:hover {
     cursor: pointer;
-    color: white;
-    background-color: rgba(35, 46, 48, 0.7);
+    color: black;
+    transform: translateY(-2px);
+    box-shadow: 2px 2px 2px rgba(74, 65, 41, 0.5);
+    background-color: rgb(150, 223, 228);
 }
 
 /* Weather Results */
@@ -95,7 +103,7 @@ p {
     padding: 20px;
     color: rgb(35, 46, 48);
     text-align: center;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 #weatherResults h2 {
@@ -125,7 +133,8 @@ p {
         gap: 15px;
     }
 
-    #cityInput, #searchBtn {
+    #cityInput,
+    #searchBtn {
         font-size: 18px;
         padding: 15px;
     }
@@ -153,7 +162,8 @@ p {
         gap: 15px;
     }
 
-    #cityInput, #searchBtn {
+    #cityInput,
+    #searchBtn {
         font-size: 18px;
         padding: 15px;
     }
@@ -177,7 +187,8 @@ p {
         padding: 90px 30px;
     }
 
-    #cityInput, #searchBtn {
+    #cityInput,
+    #searchBtn {
         font-size: 14px;
         padding: 12px;
     }
