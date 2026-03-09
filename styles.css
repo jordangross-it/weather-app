@@ -6,11 +6,15 @@
 /* Body */
 body {
     background: url('backgroundImage.jpg') no-repeat center center fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 /* Headings */
 h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 64px;
     font-weight: 900;
     color: rgb(35, 46, 48);
@@ -18,7 +22,7 @@ h1 {
 
 /* Links */
 a {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 18px;
     color: white;
     text-decoration: none;
@@ -26,24 +30,25 @@ a {
 
 /* Paragraphs */
 p {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 18px;
     color: rgb(140, 167, 181);
 }
 
 /* Container */
 .container {
-    background: linear-gradient(150deg, rgb(174, 225, 252, 0.7) 0%, rgb(149, 215, 176, 0.7) 100%);
-    backdrop-filter: blur(15px);
+    background: linear-gradient(150deg, rgb(174, 225, 252, 0.2) 0%, rgb(149, 215, 176, 0.2) 100%);
+    backdrop-filter: blur(8px);
     color: rgb(116, 139, 151);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    max-height: 100vh;
+    justify-self: center;
+    max-height: 700px;
+    max-width: 700px;
     border: 2px solid rgb(245, 245, 245, 0.5);
-    border-radius: 50px;
+    border-radius: 10px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    padding: 140px 300px;
+    padding: 90px 100px;
     margin: 40px 40px;
 }
 
@@ -62,29 +67,55 @@ p {
 }
 
 #cityInput {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 20px;
     background-color: white;
-    box-shadow: 2px 2px 2px rgba(101, 101, 101, 0.5);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
     border-style: none;
-    border-radius: 50px;
+    border-radius: 10px;
     padding: 20px;
 }
 
 #cityInput:focus {
     outline: none;
     border: 1px solid rgb(101, 101, 101);
-    box-shadow: 2px 2px 2px rgba(101, 101, 101, 0.5);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    gap: 20px;
+}
+
+#resetButton {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: rgb(35, 46, 48);
+    padding: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#resetButton:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
 }
 
 #searchBtn {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
     font-size: 20px;
+    text-transform: uppercase;
     color: black;
-    background-color: rgb(167, 249, 255);
+    background-color: rgb(150, 223, 228);
     border-style: none;
-    border-radius: 50px;
-    box-shadow: 2px 2px 2px rgba(101, 101, 101, 0.5);
+    border-radius: 10px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    min-width: 600px;
     padding: 20px;
     transition: all 0.3s ease-in-out;
 }
@@ -93,17 +124,20 @@ p {
     cursor: pointer;
     color: black;
     transform: translateY(-2px);
-    box-shadow: 2px 2px 2px rgba(74, 65, 41, 0.5);
-    background-color: rgb(150, 223, 228);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    background-color: rgb(167, 249, 255);
 }
 
 /* Weather Results */
 #weatherResults {
+    display: none;
     margin-top: 20px;
     padding: 20px;
+    background-color: rgb(255, 255, 255, 0.7);
     color: rgb(35, 46, 48);
+    border-radius: 10px;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 #weatherResults h2 {
@@ -148,56 +182,53 @@ p {
     }
 }
 
+/* Tablet and Small Screens */
 @media screen and (max-width: 768px) {
     h1 {
-        font-size: 40px;
+        font-size: 36px;
         text-align: center;
     }
 
     .container {
-        padding: 100px 20px;
+        /* Reducing large 100px padding to allow more room for content */
+        padding: 60px 30px;
+        width: 85%;
+        max-width: none;
+        margin: 0;
+        /* Centered by the body's flexbox */
     }
 
-    .inputs {
-        gap: 15px;
+    .buttons {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #searchBtn {
+        min-width: 0;
+        width: 100%;
+        /* Spans the container width */
+    }
+}
+
+/* Extra small screens (Phones) */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .container {
+        padding: 40px 20px;
+        width: 90%;
+        border-radius: 15px;
     }
 
     #cityInput,
     #searchBtn {
-        font-size: 18px;
+        font-size: 16px;
         padding: 15px;
     }
 
     #weatherResults h2 {
-        font-size: 26px;
-    }
-
-    #weatherResults p {
-        font-size: 16px;
-    }
-}
-
-/* Extra small screens (phones) */
-@media screen and (max-width: 480px) {
-    h1 {
-        font-size: 25px;
-    }
-
-    .container {
-        padding: 90px 30px;
-    }
-
-    #cityInput,
-    #searchBtn {
-        font-size: 14px;
-        padding: 12px;
-    }
-
-    #weatherResults h2 {
-        font-size: 22px;
-    }
-
-    #weatherResults p {
-        font-size: 14px;
+        font-size: 24px;
     }
 }

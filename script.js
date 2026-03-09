@@ -34,6 +34,8 @@ function displayWeather(data) {
   const { temp } = data.main;
   const { description, icon } = data.weather[0];
 
+  weatherResults.style.display = "block";
+
   weatherResults.innerHTML = `
     <h2>${name}</h2>
     <p>${Math.round(temp)}°F</p>
@@ -41,3 +43,14 @@ function displayWeather(data) {
     <img src="https://openweathermap.org/img/wn/${icon}@2x.png" alt="${description}">
   `;
 }
+
+
+// Grab the reset button
+const resetBtn = document.getElementById("resetButton");
+
+resetBtn.addEventListener("click", () => {
+  cityInput.value = "";
+  weatherResults.innerHTML = "";
+  weatherResults.style.display = "none";
+  cityInput.focus();
+});
